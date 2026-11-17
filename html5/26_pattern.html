@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <form action="success.html" method="post">
+        <lable type="pan">Pancard Number:<br>XXXXX9999X</lable><br>
+        <input type="text" id="pan" required
+        pattern="[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}">
+        <br><br>
+        <lable for="aadhar">
+            Aadhar Card Number:
+        </lable>
+        <br>
+        <input type="text" id="aadhar" name="aadhar" required
+        pattern="[0-9{12}]">
+        <br><br>
+        <lable for="credit">Credit Card Number</lable>
+        <br>
+        <input type="text" id="credit" name="credit" required
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
+        <br>
+        <br>
+        <lable for="cvv">CVV Number</lable>
+        <input type="text" id="cvv" name="cvv" required
+        pattern="[0-9]{3}">
+        <lable for="expiry">Expiry Date:</lable>
+        <input type="text" id="expiry" name="expiry">
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
